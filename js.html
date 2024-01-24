@@ -4,6 +4,9 @@
         //Obtener Dato
         let nombre = document.getElementById('nombre').value;
         let correo = document.getElementById('correo').value;
+
+        //Cerrar Modal
+        bootstrap.Modal.getInstance(document.getElementById('crearContactoModal')).hide(); // Returns a Bootstrap modal instance
                
         //Crear loading
         crearLoaderAnillo('divContactos');
